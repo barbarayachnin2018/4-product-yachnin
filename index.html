@@ -6,20 +6,184 @@
         <!-- character encoding -->
         <meta charset="UTF-8">
         <!-- title tag -->
-        <title>Product/Company Page Project</title>
+        <title>Sarkisian Farms and Driving Range</title>
         <!-- mobile-friendly viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- W3.CSS stylesheet -->
         <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- custom style -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     </head>
 
     <body>
-        
-        <h1>Hello World!</h1>
 
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#home" class="w3-bar-item w3-button">Home</a>
+                <a href="#hours" class="w3-bar-item w3-button w3-hide-small">Hours</a>
+                <a href="#golf" class="w3-bar-item w3-button w3-hide-small">Golf</a>
+                <a href="#ice-cream" class="w3-bar-item w3-button w3-hide-small">Ice Cream</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#home" class="w3-bar-item w3-button">Home</a>
+                <a href="#golf" class="w3-bar-item w3-button">Golf</a>
+                <a href="#ice-cream" class="w3-bar-item w3-button">Ice Cream</a>
+            </div>
+        </div>
+        <!-- top nav, mobile -->
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">SARKISIAN FARMS</span>
+
+            </div>
+        </div>
+
+        <!-- HOURS -->
+        <div class="w3-padding-64" id="hours">
+
+            <div class="w3-row w3-container">
+                <h1>Hours</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half w3-container">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>We are located at 159 Chandler Road Andover, MA. Our phone number is 978-688-5522 give us a call whenever. We are open everday from the hours of 9am-9pm. We accept and cash and cards except for American Express.</h3>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-half w3-container">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <img src="img/grass.jpg" class="w3-image" alt="Golf Ball">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Third Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- GOLF -->
+        <div class="w3-padding-64" id="golf">
+
+            <div class="w3-row w3-container">
+                <h1>Golf</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/golf-ball.jpg" class="w3-image" alt="Golf Ball">
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <button onclick="accordion('price')" class="w3-btn w3-block w3-theme w3-left-align w3-border">Price<i class=" w3-right w3-xlarge"></i>
+                    </button>
+                    <div id="price" class="w3-container w3-hide w3-theme-l5">
+                        <h4>Price</h4>
+                        <p>A small bucket is $7, a large bucket is $10, and a jumbo bucket is $12.</p>
+                    </div>
+
+                    <button onclick="accordion('lights')" class="w3-btn w3-block w3-theme w3-left-align">Lights</button>
+
+                    <div id="lights" class="w3-container w3-hide w3-theme-l5">
+                        <h4>Lights</h4>
+                        <p>We have lights so you can play when the sunsets! If you need a club we have some you can borrow.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min" id="golf">
+        </div>
+
+
+        <!-- ICE CREAM -->
+        <div class="w3-padding-64" id="ice-cream">
+
+            <div class="w3-row w3-container">
+                <h1>Ice Cream</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <div class="w3-content w3-display-container">
+  <img class="mySlides" src="img/cones.jpg" style="width:100%" class="w3-image">
+  <img class="mySlides" src="img/birthday-break-breakfast-461430.jpg" style="width:100%">
+  <img class="mySlides" src="img/ice-cream.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <button onclick="accordion('icecream')" class="w3-btn w3-block w3-theme w3-left-align w3-border">Ice Cream<i class=" w3-right w3-xlarge"></i>
+                    </button>
+
+                    <div id="icecream" class="w3-container w3-hide w3-theme-l5">
+                        <h4>Ice Cream</h4>
+                        <p>We serve Richardsons Ice Cream with many flavors you can come down and try! Everything from a sundae to a rootbeer float.</p>
+                    </div>
+
+                    <button onclick="accordion('slush')" class="w3-btn w3-block w3-theme w3-left-align">Slush</button>
+
+                    <div id="slush" class="w3-container w3-hide w3-theme-l5">
+                        <h4>Slush</h4>
+                        <p>We serve slush that is an awesome treat on a hot day!</p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
         
+         <!-- Fourth Parallax Image with Logo Text -->
+        <div class="bgimg-4 w3-display-container w3-opacity-min" id="ice-cream">
+        </div>
+
+
+
+        <!-- Javascript -->
+        <script src="js/tabs.js"></script>
+        <script src="js/topNav.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/slideshow.js"></script>
+
+
     </body>
 
 </html>
